@@ -21,7 +21,6 @@ jobs:
   validate:
     needs: lint
     runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates'
     steps:
       - uses: actions/checkout@v5
       - uses: projectdiscovery/nuclei-action@v3
@@ -33,7 +32,6 @@ jobs:
   weak-matcher-checks:
     needs: lint
     runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates'
     permissions:
       issues: write
       pull-requests: write

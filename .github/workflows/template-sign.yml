@@ -12,7 +12,6 @@ jobs:
   linux-sign:
     name: Sign All Templates (Linux)
     runs-on: ubuntu-latest
-    if: github.repository == 'projectdiscovery/nuclei-templates'
     steps:
       - uses: actions/checkout@v5
       - uses: projectdiscovery/nuclei-action@v3
